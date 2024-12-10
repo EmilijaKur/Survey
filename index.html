@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Facility Survey</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Wellnes center facilities quality survey</h1>
+  <p id="description">Help us improve with your answers.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name " required/></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required/></label>
+    </fieldset>
+
+    <fieldset>
+      <label id="number-label"> How do you rank us (0-10)? <input id="number" type="number" placeholder="Rank" min="0" max="10" required/></label>
+      <label>Which facility do you use most often?
+        <select id="dropdown" required>
+          <option value="">(select one)</option>
+          <option value="gym">Gym</option>
+          <option value="group-training">Group training</option>
+          <option value="pool">Pool</option>
+          <option value="sauna">Sauna</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Would you recommend our sports club to family and friends?</legend>
+      <label><input type="radio" name="recommendation" value="Definitely" required/>Yes</label>
+      <label><input type="radio" name="recommendation" value="Maybe"/>No</label>
+      <label><input type="radio" name="recommendation" value="No"/>Not sure</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What areas do you think we need to improve?</legend>
+      <label><input type="checkbox" value="gym-equipment"/>Gym equipment</label>
+      <label><input type="checkbox" value="pool"/>Pool</label>
+      <label><input type="checkbox" value="group-training"/>Group training</label>
+      <label><input type="checkbox" value="staff"/>Staff</label>
+      <label><input type="checkbox" value="cleanliness"/>Cleanliness</label>
+      <label><input type="checkbox" value="availability"/>Availability of facilities</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>How satisfied are you with the following?</legend>
+      <label>Cleanliness:
+        <select required>
+          <option value="">(select one)</option>
+          <option value="very-satisfied">Very satisfied</option>
+          <option value="satisfied">Satisfied</option>
+          <option value="neutral">Neutral</option>
+          <option value="dissatisfied">Dissatisfied</option>
+          <option value="very-dissatisfied">Very dissatisfied</option>
+        </select>
+      </label>
+      <label>Staff professionalism:
+        <select required>
+          <option value="">(select one)</option>
+          <option value="very-satisfied">Very satisfied</option>
+          <option value="satisfied">Satisfied</option>
+          <option value="neutral">Neutral</option>
+          <option value="dissatisfied">Dissatisfied</option>
+          <option value="very-dissatisfied">Very dissatisfied</option>
+        </select>
+      </label>
+      <label>Equipment availability:
+        <select required>
+          <option value="">(select one)</option>
+          <option value="very-satisfied">Very satisfied</option>
+          <option value="satisfied">Satisfied</option>
+          <option value="neutral">Neutral</option>
+          <option value="dissatisfied">Dissatisfied</option>
+          <option value="very-dissatisfied">Very dissatisfied</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label>Other comments or suggestions...
+        <textarea placeholder="Enter your comments here..." rows="4"></textarea>
+      </label>
+    </fieldset>
+
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</body>
+</html>
