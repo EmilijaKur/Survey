@@ -1,2 +1,2 @@
 # Survey
-Survey form build using html, css
+Survey form built using html, css
